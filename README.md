@@ -8,14 +8,12 @@
 
 开发环境：Win11 + Visual Studio 2019 + mfc 
 依赖：WinPcap 4.1.3 + WpdPack 4.1.2  
+
 技术细节：
 
 - MFC 搭建前端界面
 - WinPcap 实现本地网络接口抓包
 - 实现多种网络协议解析器
-
-## 目录
-[TOC]
 
 ## 功能
 
@@ -36,7 +34,7 @@
   
   | ICMP报文类型 | ICMP报文类型值 | 支持解析 |
   | ------------ | -------------- | -------- |
-  | 目的地不可达 | 3              | ×        |
+  | 目的地不可达 | 3              | ×      |
   | 源端抑制     | 4              | ×        |
   | 重定向       | 5              | ×        |
   | 超时         | 11             | ×        |
@@ -74,37 +72,37 @@
 
 * HTTP协议解析
 
-<img src="D:\repos\Net\mcf6\img\http.png" alt="http" style="zoom:33%;" />
+<img src="img/http.jpg" alt="http" style="zoom:33%;" />
 
 * IPv6协议解析
 
-<img src="D:\repos\Net\mcf6\img\ipv6.png" alt="ipv6" style="zoom:33%;" />
+<img src="img/ipv6.png" alt="ipv6" style="zoom:33%;" />
 
 * ICMP协议解析
 
-  <img src="C:\Users\曾\AppData\Roaming\Typora\typora-user-images\image-20211229121425374.png" alt="image-20211229121425374" style="zoom:33%;" />
+  <img src="img/icmp.png" alt="icmp" style="zoom:33%;" />
 
   
 
 * ARP协议解析
 
-  <img src="C:\Users\曾\AppData\Roaming\Typora\typora-user-images\image-20211229121640585.png" alt="image-20211229121640585" style="zoom:33%;" />
+  <img src="img/arp.png" alt="arp" style="zoom:33%;" />
 
 * TCP协议解析
 
-  <img src="C:\Users\曾\AppData\Roaming\Typora\typora-user-images\image-20211229121541685.png" alt="image-20211229121541685" style="zoom:33%;" />
+  <img src="img/tcp.png" alt="tcp" style="zoom:33%;" />
 
-* UTP协议解析
+* UDP协议解析
 
-  <img src="D:\repos\Net\mcf6\img\udp.png" alt="udp" style="zoom:33%;" />
+  <img src="img/udp.png" alt="udp" style="zoom:33%;" />
 
 * ICMP协议解析
 
-  <img src="C:\Users\曾\AppData\Roaming\Typora\typora-user-images\image-20211229122217997.png" alt="image-20211229122217997" style="zoom: 33%;" />
+  <img src="img/icmp.png" alt="icmp" style="zoom: 33%;" />
 
 * ICMPv6协议解析
 
-  <img src="D:\repos\Net\mcf6\img\icmpv6.png" style="zoom:33%;" />
+  <img src="img/icmpv6.png" alt="icmpv6" style="zoom:33%;" />
 
 ## 更新说明
 
@@ -116,20 +114,16 @@
 - [ ] v2.0中DHCP,DNS等协议解析的实现  
 - [ ] 数据包保存为.pcap格式文件
 - [x] 实现IP数据报的监听  
-- [x] 抓不到ARP协议（只是时间问题）
+- [x] ARP协议
 - [ ] 数据报发送功能
 - [ ] 实现端口扫描
 - [ ] 导出为可执行文件.exe
 - [ ] IP监听部分代码分离
 
 ## Known Issues
-- [ ] 不知道怎么free(data)
+- [ ] 设计模式有些问题，没有合适的地方`free data.`
 
 - [ ] 程序运行不久后会出发断点 [参考1](https://blog.csdn.net/qq_32716885/article/details/72910131?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164070078116780264083075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164070078116780264083075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-72910131.first_rank_v2_pc_rank_v29&utm_term=INT_PTR+nResponse+%3D+dlg.DoModal%28%29&spm=1018.2226.3001.4187)
-
-  <img src="D:\repos\Net\mcf6\img\image-20211229015339771.png" alt="image-20211229015339771" style="zoom:50%;" />
-
-
 
 ## 参考资料
 
