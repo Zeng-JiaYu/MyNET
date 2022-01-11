@@ -88,9 +88,9 @@
 
   <img src="img/arp.png" alt="arp" style="zoom:33%;" />
 
-* TCP协议解析
+* TCP/IPv4协议解析
 
-  <img src="img/tcp.png" alt="tcp" style="zoom:33%;" />
+  <img src="img/tcp_ipv4.png" alt="tcp_ipv4" style="zoom:33%;" />
 
 * UDP协议解析
 
